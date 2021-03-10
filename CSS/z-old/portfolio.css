@@ -1,0 +1,227 @@
+@font-face {
+  font-family: 'TradeGothicLTStd-BoldExt';
+  src: url('../font/TradeGothicLTStd-BoldExt/font.woff2') format('woff2'), url('../font//TradeGothicLTStd-BoldExt/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'TradeGothicLTStd-Extended';
+  src: url('../font/TradeGothicLTStd-Extended/font.woff2') format('woff2'), url('../font/TradeGothicLTStd-Extended/font.woff') format('woff');
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'work-sans', sans-serif;
+  width: 100vw;
+  border-style: solid;
+  border-color: transparent;
+  overflow-x: hidden; 
+  /* ÷last line is not cross browser compatabile */
+}
+
+#all-nav {
+position: fixed;
+background-color: black;
+display: flex;
+width: 101vw;
+transform: rotate(-2deg) translateY(-30px);
+max-height: 140px;
+margin-top:-15px;
+margin-left: -10px; 
+z-index: 999;
+} 
+
+.nav{
+  width: 100%;
+  display: flex; 
+  transform: rotate(-2deg);
+  align-items: center;
+  justify-content: space-between;
+  vertical-align: middle;
+  transform: rotate(2deg);
+  margin-left: -10px; 
+  margin-top: 50px;
+ }
+
+ .hamburger{
+   margin-top: 80px;
+   margin-right: 30px;
+   display: none;
+   transform: rotate(2deg);
+ }
+.menu{
+  color: #BEE1D6;
+  font-size: 36px;
+}
+
+#logo{
+  padding: 15px;
+  Margin-top: 21px; 
+  margin-left: 20px;
+  margin-right: 40px; 
+  max-width: 100%;
+  max-height: 100px;
+  z-index:1001;
+}
+.topnav-left a{
+  font-family: ballinger-mono, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  color: white; 
+  text-decoration: none;
+  padding: 0px;  
+  width: 125px;
+  text-align: center;
+ margin-right: 30px; 
+  }
+.leftlinks{margin-top: 100px;
+  
+}
+.RightLinks{ 
+  font-size: 25px;
+  color: white; 
+  text-decoration: none;
+  margin-left: 15px;
+  vertical-align: middle;
+  justify-content: flex-end;
+}
+
+.topnav-right{margin-right: 50px;
+}
+
+.resume{font-size: 15px;
+  color: white; 
+  font-family: ballinger-mono, sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  text-align: center;
+  margin-left: 11px;
+} 
+
+#email {
+  font-size: 28px;
+}
+#phone {
+  font-size: 23px;
+}
+
+ .xy {
+    position: fixed;
+    bottom: 0;
+    margin-bottom: -3px;
+   }
+
+   .footer {
+    background-color:#FCB140;
+    display: flex;
+    /* flex-direction: column; */
+    width: 100vw;
+    justify-content: space-between;
+    margin-right: -5px;
+    margin-left: -5px;
+    z-index: 1;
+    /* height: 143px; */
+    /* border: blue 2px solid; */
+}
+
+.footer a{
+    color: #000000;
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+    /* margin-top: 20px; */
+  }
+
+ .leftfooter{
+   margin-top: 20px;
+ }   
+.copyright {
+  font-size: 13px;
+  margin-top: 20px;;
+  margin-right: 40px; 
+  padding-bottom: 20px; 
+}
+
+
+
+@media only screen and (max-width: 825px){
+  #all-nav{
+    justify-content: space-between;
+  }
+
+.nav{
+  position: absolute;
+  top: 90%;
+  flex-direction: column;
+  display: none;
+  background-color: black;
+  transform:  translateY(-36px);
+  min-height: 1400px;
+  width: 100vw;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+#logo{
+  Margin-top: 28px;
+  max-width: 66%;
+  max-height: 66%;
+}
+
+.leftLinks{
+ align-self: center;
+}
+.topnav-left{
+  display: flex;
+  flex-direction: column;
+  transform: rotate(2deg);
+}
+.topnav-left a{
+  padding: 10px;
+}
+
+.topnav-right{
+  display: flex;
+  flex-direction: column;
+  transform: rotate(2deg);
+  text-align: center;
+}
+  
+.topnav-right a{
+  padding: 10px;
+}
+.hamburger {
+  display: block;
+  z-index: 998;
+  margin-right: 50px;} 
+
+.footerbottom, .wrapper, .work {
+  overflow: hidden;
+}
+
+.footer {
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100vw;
+  margin: 0;
+  margin-left: -3px;
+  /* margin-right: -20px; */
+}
+
+.leftfooter {
+  display:flex;
+  flex-direction: column;
+  margin-left: 5px;
+  /* margin-right: -20px; */
+}
+.copyright {
+  margin-left: 45px;
+  font-size: 12px;
+  margin-top: 20px;;
+  margin-right: 40px; 
+  padding-bottom: 20px; }
